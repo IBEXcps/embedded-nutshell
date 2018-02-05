@@ -37,3 +37,14 @@
 
 ```
 
+## Generates fake h264 stream, payloads, sends via UDP (for testing purposes)
+
+```
+  gst-launch-1.0 videotestsrc pattern=ball ! \    # Generates a bouncing ball video
+  video/x-raw,width=640,height=480 ! \            # Sets generated video format
+  videoconvert ! x264enc bitrate=5000 ! \         # Encodes video
+  video/x-h264, profile=baseline ! \              # Encoding caps
+  rtph264pay ! \                                  # Payload into RTP
+  udpsink host=localhost port=8004                # Sends via UDP
+
+```
