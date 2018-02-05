@@ -21,3 +21,10 @@ pass: alarm
 # connect wifi
 # where wlp10s0b1 is your wifi card
 wpa_supplicant -B -D nl80211,wext -i wlp10s0b1 -c <(wpa_passphrase $SSID $PASSWORD)
+
+# install dialog and run wifi-menu 
+pacman -S dialog
+wifi-menu
+systemctl enable netctl
+systemctl start netctl
+reboot
