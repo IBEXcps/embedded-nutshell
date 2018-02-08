@@ -1,3 +1,7 @@
+# rasp-config
+## User friendly interface for hardware configuration
+yaourt -s rasp-config
+
 # SPI
 ## To enable the /dev/spidev* devices:
 # /boot/config.txt
