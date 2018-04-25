@@ -1,0 +1,10 @@
+# Enable ssh as root (**sshd**)
+
+As root, edit the sshd_config file in /etc/ssh/sshd_config : nano /etc/ssh/sshd_config.
+Add a line in the Authentication section of the file that says PermitRootLogin yes
+
+Restart the computer
+
+# login via ssh as root
+usermod -l newname oldname
+usermod -d /my/new/home -m newname
