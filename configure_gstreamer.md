@@ -9,5 +9,4 @@ modprobe bcm2835-v4l2
 sudo v4l2-ctl -d /dev/video0 --all
 
 # Install gst
-yaourt -S gstreamer v4l-utils --noconfirm
-yaourt -S gst-plugins-bad  gst-plugins-good gst-plugins-ugly --noconfirm
+yaourt -S gstreamer v4l-utils gst-plugins-bad  gst-plugins-good gst-plugins-ugly --noconfirm
