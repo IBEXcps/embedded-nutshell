@@ -48,3 +48,9 @@
   udpsink host=localhost port=8004                # Sends via UDP
 
 ```
+
+## Additional links
+
+[Gstreamers' examples](https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/tests/examples)
+
+[More examples](http://labs.isee.biz/index.php/Example_GStreamer_Pipelines)
